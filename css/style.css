@@ -18,14 +18,34 @@ input, textarea {
 }
 
 #logo {
-  max-width: 130px;
+  width: 10vw; /* Ajusta o tamanho do logo com base na largura da tela */
+ 
 }
 
+@media (max-width: 576px) {
+  #logo {
+
+    max-width: 120px; /* Limite máximo de tamanho */
+  }
+}
+
+/* Para telas entre 576px e 768px (md) */
+@media (min-width: 576px) and (max-width: 768px) {
+  #logo {
+    width: 15vw; /* O logo ocupará 40% da largura da tela */
+    max-width: 130px; /* Limite máximo de tamanho */
+  }
+}
+
+
+
+
 #pattern {
-  width: 100%;
-  height: 100%;
+  width: 260%;
+  aspect-ratio: 16 / 9; /* Proporção 16:9 */
   object-fit: cover;
 }
+
 
 @media print {
   .container {

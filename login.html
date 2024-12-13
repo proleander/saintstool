@@ -15,9 +15,7 @@
         .form-control {
           font-size: 1rem;
         }
-        #logo {
-          width: 100px;
-        }
+       
         .gap-5 {
           gap: 1.5rem !important;
         }
@@ -58,26 +56,37 @@
     </style>
   </head>
   <body>
-    <div class="container-fluid vh-100 d-flex p-0">
-      <div class="container text-center d-flex flex-column justify-content-center align-items-center gap-5 vh-100 p-0">
-        <a href="./index.html"><img src="./logo.png" alt="Logo" id="logo" /></a>
+    <nav class="navbar navbar-expand-md bg-black navbar-dark">
+      <div class="container-fluid d-flex justify-content-center">
+        <a class="navbar-brand" href="./index.html">
+          <img class="d-block" src="./logo1.png" alt="logo" style="width: 90px; height: 75px;">
+        </a>
+        
+        
+        
+      </div>
+    </nav>
+    <div class="container-fluid vh-100 d-flex ">
+      <div class="container text-center d-block flex-column justify-content-center align-items-center gap-5 vh-100 p-5">
+       
+
         <div class="d-flex flex-column w-100" style="max-width: 600px;">
-          <div class="d-flex flex-column gap-2">
+          <div class="d-flex flex-column gap-0">
             <div class="text-start">
-              <h5 class="text-center">Preencha a Ata</h5>
+              <h6 class="text-center">Ata Sacramental</h>
             </div>
             <div>
-              <form>
+              <form class="container w-80">
                 <div class="row mb-2">
                   <!-- Data -->
                   <div class="col-12 col-sm-6">
-                    <label for="data" class="form-label">Data</label>
+                        <h7>Data</h7>
                     <input type="date" class="form-control" id="data" required />
                   </div>
 
                   <!-- Endereço -->
                   <div class="col-12 col-sm-6">
-                    <label for="endereco" class="form-label">Ala</label>
+                    <h7>Digite o nome da Ala</h7>
                     <input type="text" class="form-control" id="endereco" placeholder="Digite o nome da Ala" required />
                   </div>
                 </div>
@@ -85,67 +94,63 @@
                 <div class="row mb-2">
                   <!-- Presidida por -->
                   <div class="col-12 col-sm-6">
-                    <label for="presididaPor" class="form-label">Presidida por</label>
+                    <h7>Presidida por:</h7>
                     <input type="text" class="form-control" id="presididaPor" placeholder="Digite o nome de quem irá presidir" required />
                   </div>
 
                   <!-- Dirigida por -->
                   <div class="col-12 col-sm-6">
-                    <label for="dirigidaPor" class="form-label">Dirigida por</label>
+                    <h7>Dirigida por:</h7>
                     <input type="text" class="form-control" id="dirigidaPor" placeholder="Digite o nome de quem irá dirigir" required />
                   </div>
                 </div>
 
-                <!-- Anúncios -->
-                <div class="mb-2">
-                  <label for="anuncios" class="form-label">Anúncios</label>
-                  <textarea class="form-control" id="anuncios" rows="2" placeholder="Digite os anúncios"></textarea>
-                </div>
-
+              
                 <div class="row mb-2">
                   <!-- Primeira oração -->
                   <div class="col-12 col-sm-6">
-                    <label for="primeiraOracao" class="form-label">Primeira Oração</label>
-                    <input type="text" class="form-control" id="primeiraOracao" placeholder="Nome do responsável pela oração" required />
+                    <h7>1-Hino Inicial</h7>
+                    <input type="text" class="form-control" id="primeiraOracao" placeholder="Nome ou número do hino inicial" required />
                   </div>
 
                   <!-- Hino inicial -->
                   <div class="col-12 col-sm-6">
-                    <label for="hinoInicial" class="form-label">Hino Inicial</label>
-                    <input type="text" class="form-control" id="hinoInicial" placeholder="Nome ou número do hino inicial" required />
+                    <h7>2-Primeira oração</h7>
+                    <input type="text" class="form-control" id="hinoInicial" placeholder="Nome do responsável pela oração" required />
                   </div>
                 </div>
 
                 <!-- Apoios e Desobrigações -->
-                <div class="mb-2">
-                  <label for="apoios" class="form-label">Apoios e Desobrigações</label>
-                  <textarea class="form-control" id="apoios" rows="2" placeholder="Detalhes dos apoios e desobrigações"></textarea>
-                </div>
+                  <!-- Anúncios -->
+                  <div class="mb-2">
+                    <h7>3-Anúncios:</h7>
+                    <textarea class="form-control" id="anuncios" rows="2" placeholder="Digite os anúncios"></textarea>
+                  </div>
+  
 
                 <div class="row mb-2">
                   <!-- Hino Sacramental -->
                   <div class="col-12 col-sm-6">
-                    <label for="hinoSacramental" class="form-label">Hino Sacramental</label>
+                    <h7>4-Hino sacramental</h7>
                     <input type="text" class="form-control" id="hinoSacramental" placeholder="Nome ou número do hino sacramental" required />
                   </div>
-
-                  <!-- Sacramento -->
                   <div class="col-12 col-sm-6">
-                    <label for="sacramento" class="form-label">Sacramento</label>
-                    <input type="text" class="form-control" id="sacramento" placeholder="Nome dos que ministraram o sacramento" required />
+                    <h7>6-Segundo orador</h7>
+                    <input type="text" class="form-control" id="segundoOrador" placeholder="Nome do segundo orador" />
                   </div>
                 </div>
 
+                
                 <div class="row mb-2">
                   <!-- Primeiro Orador -->
                   <div class="col-12 col-sm-6">
-                    <label for="primeiroOrador" class="form-label">Primeiro Orador</label>
+                    <h7>5-Primeiro orador</h7>
                     <input type="text" class="form-control" id="primeiroOrador" placeholder="Nome do primeiro orador" required />
                   </div>
 
                   <!-- Segundo Orador -->
                   <div class="col-12 col-sm-6">
-                    <label for="segundoOrador" class="form-label">Segundo Orador</label>
+                    <h7>6-Segundo orador</h7>
                     <input type="text" class="form-control" id="segundoOrador" placeholder="Nome do segundo orador" />
                   </div>
                 </div>
@@ -153,13 +158,13 @@
                 <div class="row mb-2">
                   <!-- Hino Intermediário -->
                   <div class="col-12 col-sm-6">
-                    <label for="hinoIntermediario" class="form-label">Hino Intermediário</label>
+                    <h7>7-Hino intermediário</h7>
                     <input type="text" class="form-control" id="hinoIntermediario" placeholder="Nome ou número do hino intermediário" />
                   </div>
 
                   <!-- Último Orador -->
                   <div class="col-12 col-sm-6">
-                    <label for="ultimoOrador" class="form-label">Último Orador</label>
+                    <h7>8-Ultimo orador</h7>
                     <input type="text" class="form-control" id="ultimoOrador" placeholder="Nome do último orador" />
                   </div>
                 </div>
@@ -167,21 +172,21 @@
                 <div class="row mb-2">
                   <!-- Último Hino -->
                   <div class="col-12 col-sm-6">
-                    <label for="ultimoHino" class="form-label">Último Hino</label>
+                    <h7>9-Hino de encerramento</h7>
                     <input type="text" class="form-control" id="ultimoHino" placeholder="Nome ou número do último hino" />
                   </div>
 
                   <!-- Última Oração -->
                   <div class="col-12 col-sm-6">
-                    <label for="ultimaOracao" class="form-label">Última Oração</label>
+                    <h7>10- Oração de</h7>
                     <input type="text" class="form-control" id="ultimaOracao" placeholder="Nome do responsável pela última oração" />
                   </div>
                 </div>
 
                 <!-- Botões -->
                 <div class="d-flex justify-content-end">
-                  <button type="reset" class="btn btn-secondary">Limpar</button>
-                  <button type="submit" class="btn btn-primary">Salvar</button>
+                  <button type="reset" class="btn btn-secondary">Salvar</button>
+                  <!--<button type="submit" class="btn btn-primary">Salvar</button> -->
                 </div>
               </form>
               <div class="toast-container position-fixed top-0 end-0 p-3">
@@ -203,6 +208,24 @@
         <img src="./assets/geometric-pattern2.jpg" alt="Pattern" id="pattern" />
       </div>
     </div>
+ <footer class="text-center bg-black navbar-dark" style="color: white;">
+        <p class="py-2" style="font-size: 0.9rem;">Oi! É bom te ver por aqui! Este app está sendo desenvolvido por Leandro Silva</p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-2 col-sm-4 col-xs-3 d-flex justify-content-center">
+                    <a href="https://www.apple.com/app-store/" target="#" aria-label="Baixe na App Store">
+                        <img src="./assets/app_store.png" alt="App Store" class="img-fluid pb-2">
+                    </a>
+                </div>
+                <div class="col-4 col-md-2 col-sm-4 d-flex justify-content-center">
+                    <a href="https://play.google.com/store" target="#" aria-label="Baixe no Google Play">
+                        <img src="./assets/googleplay.png" alt="Google Play" class="img-fluid pb-2">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="./css/bootstrap.bundle.min.js"></script>
     <script src="./scripts/script.js"></script>
   </body>
